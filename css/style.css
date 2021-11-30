@@ -1,0 +1,23 @@
+@font-face {
+    font-family: spartan;
+    src: url(../assets/fonts/Spartan-VariableFont_wght.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: spartan;
+    src: url(../assets/fonts/Spartan-VariableFont_wght.ttf);
+    font-weight: 400;
+}
+body,h1,button,p,div,span,h2,h3,h4 {
+    font-family: spartan;
+}
+.backward-btn {
+    background: url(../assets/icons/backward.svg) no-repeat;
+    background-size: 100%;
+    display: inline-block;
+}
+.forward-btn {
+    background: url(../assets/icons/forward.svg) no-repeat;
+    background-size: 100%;
+    display: inline-block;
+}
