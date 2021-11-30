@@ -1,78 +1,78 @@
-{
-    "natural-environment":{
-        "image-name": "Natural Environment",
-        "author-name": "Natural Environment",
+[
+    {
+        "image_name": "Natural Environment",
+        "author_name": "Natural Environment",
         "src": "../assets/images/natural-environment.jpg",
         "informations": "Natural Environment"
     },
 
-    "cruel-war":{
-        "image-name": "Cruel War",
-        "author-name": "Natural Environment",
+    {
+        "image_name": "Cruel War",
+        "author_name": "Natural Environment",
         "src": "../assets/images/cruel-war.jpg",
         "informations": "Natural Environment"
     },
 
-    "dialogue-survivors":{
-        "image-name": "Dialogue Survivors",
-        "author-name": "Natural Environment",
+    {
+        "image_name": "Dialogue Survivors",
+        "author_name": "Natural Environment",
         "src": "../assets/images/dialogue-survivors.jpg",
         "informations": "Natural Environment"
     },
 
-    "moment-city-was-hit-by-nuclear":{
-        "image-name": "Moment City Was Hit By Nuclear",
-        "author-name": "Natural Environment",
+    {
+        "image_name": "Moment City Was Hit By Nuclear",
+        "author_name": "Natural Environment",
         "src": "../assets/images/moment-city-was-hit-by-nuclear.jpg",
         "informations": "Natural Environment"
     },
 
-    "group-armed":{
-        "image-name": "Group Armed",
-        "author-name": "Natural Environment",
+    {
+        "image_name": "Group Armed",
+        "author_name": "Natural Environment",
         "src": "../assets/images/group-armed.jpg",
         "informations": "Natural Environment"
     },
 
-    "world-collapse-doomsday":{
-        "image-name": "World Collapse Doomsday",
-        "author-name": "Natural Environment",
+    {
+        "image_name": "World Collapse Doomsday",
+        "author_name": "Natural Environment",
         "src": "../assets/images/world-collapse-doomsday.jpg",
         "informations": "Natural Environment"
     },
 
-    "people-swallowed-by-tornadoes":{
-        "image-name": "People Swallowed By Tornadoes",
-        "author-name": "Natural Environment",
+    {
+        "image_name": "People Swallowed By Tornadoes",
+        "author_name": "Natural Environment",
         "src": "../assets/images/people-swallowed-by-tornadoes.jpg",
         "informations": "Natural Environment"
     },
 
-    "bw-greek-statue":{
-        "image-name": "Bw Greek Statue",
-        "author-name": "Natural Environment",
+    {
+        "image_name": "Bw Greek Statue",
+        "author_name": "Natural Environment",
         "src": "../assets/images/bw-greek-statue.jpg",
         "informations": "Natural Environment"
     },
 
-    "doomsday-scene":{
-        "image-name": "Doomsday Scene",
-        "author-name": "Natural Environment",
+    {
+        "image_name": "Doomsday Scene",
+        "author_name": "Natural Environment",
         "src": "../assets/images/doomsday-scene.jpg",
         "informations": "Natural Environment"
     },
 
-    "greek-statue-engraving":{
-        "image-name": "Greek Statue Engraving",
-        "author-name": "Natural Environment",
+    {
+        "image_name": "Greek Statue Engraving",
+        "author_name": "Natural Environment",
         "src": "../assets/images/greek-statue-engraving.jpg",
         "informations": "Natural Environment"
     },
 
-    "greek-statue":{
-        "image-name": "Greek Statue",
-        "author-name": "Natural Environment",
+    {
+        "image_name": "Greek Statue",
+        "author_name": "Natural Environment",
         "src": "../assets/images/greek-statue.jpg",
         "informations": "Natural Environment"
     }
-}
+]
