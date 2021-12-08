@@ -17,12 +17,13 @@ body,h1,button,p,div,span,h2,h3,h4 {
 }
 i {
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover !important;
     display: inline-block;
 }
 .backward-btn {background: url(../assets/icons/backward.svg);}
 .forward-btn {background: url(../assets/icons/forward.svg);}
 .full-screen-btn {background: url(../assets/icons/full-screen.png);}
+.x-btn {background: url(../assets/icons/close.png) 50% 50% no-repeat; background-size: 50%;}
 
 .w-12\/13 {
     width:94%;
@@ -30,6 +31,7 @@ i {
 .img-box:hover .art-img {
     transform: scale(1.2);
 }
+
 .img-box {
     @apply overflow-hidden text-white cursor-pointer;
 }
@@ -37,8 +39,20 @@ i {
     @apply h-full w-full transition;
 }
 .art\/author-name {
-    @apply mb-2 absolute block bg-gradient-to-t h-20 px-6 pt-5 from-gray-800;
+    @apply mb-2 absolute block bg-gradient-to-t px-6 from-gray-800;
     transform: translatey(-98%);
+}
+.img-grid-div {
+    @apply flex items-start mx-auto lg:mx-0 h-12/13 justify-start flex-col;
+}
+
+.progressBar {
+    animation: progressBar 25s .3s infinite linear;
+}
+
+.dynamic-image-size {
+    width: 40rem;
+    min-width: 10rem;
 }
 .h-75 {
     height: 75%;
@@ -47,7 +61,7 @@ i {
     width: 60%;
 }
 .img-info-translate {
-    transform: translate(0,30%);
+    transform: translate(0,50%);
 }
 .figcaption-translate {
     transform: translatex(91%);
@@ -58,6 +72,12 @@ i {
 .img-year-translate {
     transform: translatey(30%);
 }
+
+@keyframes progressBar {
+    from {width: 0;}
+    to {width: 100%;}
+}
+
 @media (min-width:1024px) {
     .lg\:w-12\/13 {
         width: 94%;
