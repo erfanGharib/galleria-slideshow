@@ -6,7 +6,7 @@ let progress_bar_$func =(image_data_num)=>{
         return (`
             <div class="w-full h-20 flex flex-col">
                 <span class="h-0.5 w-full block bg-gray-100">
-                    <span class="progressBar h-0.5 block bg-gray-600"></span>
+                    <span class="h-0.5 block w-0 bg-gray-600"></span>
                 </span>
     
                 <div class="flex justify-between w-full items-center px-6 pt-3.5">
@@ -15,8 +15,8 @@ let progress_bar_$func =(image_data_num)=>{
                         <h3 class="h-5 mr-auto">${data[image_data_num].author_name}</h3>
                     </span>
                     <span class="flex">
-                        <button class="backward/forward-btn p-2"><i class="backward-btn w-5 h-5"></i></button>
-                        <button class="backward/forward-btn"><i class="forward-btn w-5 h-5"></i></button>                
+                        <button class="rounded-md p-2 hover:bg-opacity-10 flex hover:bg-gray-900 w-9 h-9 mr-4"><i class="backward-btn w-5 h-5"></i></button>
+                        <button class="rounded-md p-2 hover:bg-opacity-10 flex hover:bg-gray-900 w-9 h-9"><i class="forward-btn w-5 h-5"></i></button>                
                     </span>
                 </div>
             </div>
