@@ -9,7 +9,7 @@ let image_overview_$dom;
 
 let load_image_overview_$func =()=>{
     if(main_$dom.innerHTML==='') image_grid_$html.then((html_code)=> main_$dom.innerHTML=html_code); 
-    image_grid_$html.then(()=> image_grid_div_$dom = $('.img-grid-div'))
+    image_grid_$html.then(()=> image_grid_div_$dom = document.querySelectorAll('.img-grid-div'))
     .then(()=>{
         image_data_$data.then((data)=>{
         let element_num=0;
@@ -27,7 +27,7 @@ let load_image_overview_$func =()=>{
                 }
             })
             .then(()=> {
-                image_overview_$dom = $('.img-box');
+                image_overview_$dom = document.querySelectorAll('.img-box');;
                 image_overview_$dom[data_arr].addEventListener(
                     'click',function () {
                         load_art_info_$func(this);
@@ -45,15 +45,14 @@ let load_art_info_$func =(this_)=>{
     art_info_$func(image_overview_$arr.indexOf(this_));
     art_info_$d_html.then((data)=>{
         main_$dom.innerHTML=data;
-    });
-    art_info_$d_html.then(()=>{
         progress_bar_$func(image_overview_$arr.indexOf(this_));
         progress_bar_$d_html.then((data)=>{
             main_$dom.innerHTML+=data;
+        })
+        .then(()=>{
+            document.querySelector('#veiw-btn').addEventListener('click', veiw_image_$func);
         });
-    }).then(()=>{
-        document.querySelector('#veiw-btn').addEventListener('click', veiw_image_$func)
-    });
+    })
 }
 
 let veiw_image_$func =()=> {
@@ -70,6 +69,16 @@ let veiw_image_$func =()=> {
         </div>
     `) 
     document.querySelector('#veiw-btn').addEventListener('click', veiw_image_$func)
+}
+
+let start_stop_slideshow =()=> {
+    progressBar
+    art_info_$func(0);
+    art_info_$d_html.then((data)=>{
+        main_$dom.innerHTML=data;
+    }).then(()=>{
+        document.querySelector('#veiw-btn').addEventListener('click', veiw_image_$func)
+    });
 }
 export default load_image_overview_$func;
 export {};
