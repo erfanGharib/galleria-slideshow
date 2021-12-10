@@ -1,4 +1,4 @@
-import image_data_$data from "../js/variable.js";
+import {image_data_$data} from "../js/main.js";
 // make image overview template dynamic
 let image_overview_template_$d_html;
 let image_overview_template_$func =(image_data_num)=>{
@@ -11,7 +11,7 @@ let image_overview_template_$func =(image_data_num)=>{
                     alt="${data[image_data_num].image_name}"
                 >
                 <figcaption class="art/author-name w-74">
-                    <h1 class="capitalize font-bold text-5md">${data[image_data_num].image_name}</h1>
+                    <h1 id="img-name" class="capitalize font-bold text-5md">${data[image_data_num].image_name}</h1>
                     <h3 class="capitalize">${data[image_data_num].author_name}</h3>
                 </figcaption>
             </figure>
