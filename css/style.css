@@ -47,7 +47,7 @@ i {
 }
 
 .progressBar {
-    animation: progressBar 25s .3s infinite linear;
+    animation: progressBar 20s infinite linear;
 }
 
 .dynamic-image-size {
@@ -71,6 +71,11 @@ i {
 }
 .img-year-translate {
     transform: translatey(30%);
+}
+
+.disable-btn {
+    opacity: .5;
+    cursor: default !important;
 }
 
 @keyframes progressBar {
