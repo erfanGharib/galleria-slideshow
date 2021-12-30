@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: spartan;
+    src: url(../assets/fonts/Spartan-VariableFont_wght.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: spartan;
+    src: url(../assets/fonts/Spartan-VariableFont_wght.ttf);
+    font-weight: 400;
+}
+body,h1,button,p,div,span,h2,h3,h4 {
+    font-family: spartan;
+}
+i {
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    display: inline-block;
+}
+.backward-btn {background: url(../assets/icons/backward.svg);}
+.forward-btn {background: url(../assets/icons/forward.svg);}
+.full-screen-btn {background: url(../assets/icons/full-screen.png);}
+.x-btn {background: url(../assets/icons/close.png) 50% 50% no-repeat; background-size: 50%;}
+
+.w-12\/13 {
+    width:94%;
+}
+.img-box:hover .art-img {
+    transform: scale(1.2);
+}
+
+.img-box {
+    @apply overflow-hidden text-white cursor-pointer;
+}
+.art-img {
+    @apply h-full w-full transition;
+}
+.art\/author-name {
+    @apply mb-2 absolute block bg-gradient-to-t px-6 from-gray-800;
+    transform: translatey(-98%);
+}
+.img-grid-div {
+    @apply flex items-start mx-auto lg:mx-0 h-12/13 justify-start flex-col;
+}
+
+.progressBar {
+    animation: progressBar 20s infinite linear;
+}
+
+.dynamic-image-size {
+    width: 40rem;
+    min-width: 10rem;
+}
+.h-75 {
+    height: 75%;
+}
+.w-60-p {
+    width: 60%;
+}
+.img-info-translate {
+    transform: translate(0,50%);
+}
+.figcaption-translate {
+    transform: translatex(91%);
+}
+.w-74 { 
+    width: 18.5rem;
+}
+.img-year-translate {
+    transform: translatey(30%);
+}
+
+.disable-btn {
+    opacity: .5;
+    cursor: default !important;
+}
+
+@keyframes progressBar {
+    from {width: 0;}
+    to {width: 100%;}
+}
+
+@media (min-width:1024px) {
+    .lg\:w-12\/13 {
+        width: 94%;
+    }
+    .lg\:w-60-p {
+        width: 60%;
+    }
+    .lg\:img-info-translate {
+        transform: translate(-5%,30%);
+    }
+    .lg\:figcaption-translate {
+        transform: translatex(72%);
+    }
+}
+@media (min-width:640px) {
+    .sm\:w-34 {
+        width: 8.5rem;
+    }
+}
+@media (min-width:815px) {
+    .xsm\:justify-between {
+        justify-content: space-between;
+    }
+    .xsm\:overflow-y-visible {
+        overflow-y: visible;
+    }
+}
