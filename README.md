@@ -4,3 +4,5 @@
 - This project is SPA written with vanila.js and tailwind.css
 - All data load from json file
 - Pages loaded from components file to have no rewrited and clean codes
+## Project Status
+Completed
