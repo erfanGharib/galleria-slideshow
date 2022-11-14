@@ -4,11 +4,11 @@ let art_info_$d_html;
 let art_info_$func =(image_data_num)=>{
     art_info_$d_html = image_data_$data.then((data) => {
         return (`
-            <div class="flex justify-center xsm:justify-between w-12/13 my-auto overflow-y-scroll xsm:overflow-y-visible flex-wrap lg:h-75 pt-10 pb-24 lg:py-0 h-full">
-                <figure class="w-4/5 sm:w-2/3 lg:w-2/4 md:h-96 sm:h-70 items-center my-auto justify-start relative flex">
-                    <div class="justify-center md:justify-start items-start flex">
-                        <span class="z-0 relative h-full w-11/12">
-                            <img class="dynamic-image-size" src="${data[image_data_num].src}" alt="${data[image_data_num].image_name}">
+            <div id="art-info" class="flex justify-center xsm:justify-between w-12/13 my-auto overflow-y-scroll xsm:overflow-y-visible flex-wrap lg:h-75 pt-10 pb-24 lg:py-0 h-full">
+                <figure style="width:35%" class="h-full items-center my-auto justify-start relative flex">
+                    <div class="justify-center md:justify-start w-full items-start flex">
+                        <span class="z-0 relative w-full">
+                            <img class="w-full" src="${data[image_data_num].src}" alt="${data[image_data_num].image_name}">
                             <button id="veiw-btn" class="bg-gray-900 bg-opacity-90 hover:bg-opacity-100 p-3 absolute top-3 sm:top-auto sm:bottom-3 left-3 text-xs flex justify-evenly items-center text-white">
                                 <i class="full-screen-btn w-4 h-4"></i>
                                 <span class="mt-1 ml-2">VIEW IMAGE</span>

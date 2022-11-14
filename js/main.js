@@ -12,9 +12,18 @@
     _$func = es6 functions
 */
 
-import image_data_$data from "./variable.js";
-import image_overview_template_$func from "../components/image-overview-template.js";
+import load_image_overview_$func from "./function.js";
 
 // load dom
-let header_$dom = $('header');
-let main_$dom = $('main');
+let main_$dom = document.querySelector('main');
+let start_stop_slideshow_$dom = document.querySelector('#start-stop-slideshow');
+let image_grid_$html = fetch("/components/image-grid.html").then((res)=> res.text()); // load project components
+let image_data_$data = fetch("/data/image-data.json").then((res)=> res.json()); 
+
+export default main_$dom;
+export { 
+    start_stop_slideshow_$dom,
+    image_data_$data, image_grid_$html
+};
+
+load_image_overview_$func();

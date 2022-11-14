@@ -1,6 +1,2 @@
 assets/
 node_modules/
-package.json
-package-lock.json
-*.txt
-css/tailwind.css
