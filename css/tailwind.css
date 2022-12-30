@@ -6671,6 +6671,10 @@ video {
   width: 11rem;
 }
 
+.w-45 {
+  width: 45%;
+}
+
 .w-48 {
   width: 12rem;
 }
@@ -32267,7 +32271,7 @@ body,h1,button,p,div,span,h2,h3,h4 {
 
 i {
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover !important;
   display: inline-block;
 }
 
@@ -32281,6 +32285,11 @@ i {
 
 .full-screen-btn {
   background: url(../assets/icons/full-screen.png);
+}
+
+.x-btn {
+  background: url(../assets/icons/close.png) 50% 50% no-repeat;
+  background-size: 50%;
 }
 
 .w-12\/13 {
@@ -32317,8 +32326,35 @@ i {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(31, 41, 55, 0));
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  padding-bottom:1.25rem;
   transform: translatey(-98%);
+}
+
+.img-grid-div {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+@media (min-width: 1024px) {
+  .img-grid-div {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+/*  */
+
+.progressBar {
+  -webkit-animation: progressBar 20s infinite linear;
+          animation: progressBar 20s infinite linear;
+}
+
+.dynamic-image-size {
+  width: 40rem;
+  min-width: 10rem;
 }
 
 .h-75 {
@@ -32330,7 +32366,7 @@ i {
 }
 
 .img-info-translate {
-  transform: translate(0,30%);
+  transform: translate(0,50%);
 }
 
 .figcaption-translate {
@@ -32343,6 +32379,31 @@ i {
 
 .img-year-translate {
   transform: translatey(30%);
+}
+
+.disable-btn {
+  opacity: .5;
+  cursor: default !important;
+}
+
+@-webkit-keyframes progressBar {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes progressBar {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
 @media (min-width:1024px) {
@@ -38449,6 +38510,10 @@ i {
 
   .sm\:w-44 {
     width: 11rem;
+  }
+
+  .sm\:w-45 {
+    width: 45%;
   }
 
   .sm\:w-48 {
@@ -69679,6 +69744,10 @@ i {
     width: 11rem;
   }
 
+  .md\:w-45 {
+    width: 45%;
+  }
+
   .md\:w-48 {
     width: 12rem;
   }
@@ -100905,6 +100974,10 @@ i {
 
   .lg\:w-44 {
     width: 11rem;
+  }
+
+  .lg\:w-45 {
+    width: 45%;
   }
 
   .lg\:w-48 {
@@ -132135,6 +132208,10 @@ i {
     width: 11rem;
   }
 
+  .xl\:w-45 {
+    width: 45%;
+  }
+
   .xl\:w-48 {
     width: 12rem;
   }
@@ -163361,6 +163438,10 @@ i {
 
   .\32xl\:w-44 {
     width: 11rem;
+  }
+
+  .\32xl\:w-45 {
+    width: 45%;
   }
 
   .\32xl\:w-48 {

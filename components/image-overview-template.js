@@ -10,7 +10,7 @@ let image_overview_template_$func =(image_data_num)=>{
                     src="${data[image_data_num].src}" 
                     alt="${data[image_data_num].image_name}"
                 >
-                <figcaption class="art/author-name w-74">
+                <figcaption class="art/author-name w-74 pb-4">
                     <h1 id="img-name" class="capitalize font-bold text-5md">${data[image_data_num].image_name}</h1>
                     <h3 class="capitalize">${data[image_data_num].author_name}</h3>
                 </figcaption>

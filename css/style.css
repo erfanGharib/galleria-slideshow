@@ -43,9 +43,10 @@ i {
     transform: translatey(-98%);
 }
 .img-grid-div {
-    @apply flex items-start mx-auto lg:mx-0 h-12/13 justify-start flex-col;
+    @apply flex items-start mx-auto lg:mx-0 justify-start flex-col;
 }
 
+/*  */
 .progressBar {
     animation: progressBar 20s infinite linear;
 }
